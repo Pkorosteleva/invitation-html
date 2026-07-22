@@ -1,0 +1,718 @@
+:root {
+    --bg: #f3efe7;
+    --surface: #faf8f3;
+    --green: #30463b;
+    --dark: #20241f;
+    --accent: #c47745;
+    --muted: #77756d;
+    --white: #ffffff;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: var(--bg);
+
+    color: var(--dark);
+
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+
+}
+
+
+/* легкая текстура бумаги */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+    radial-gradient(
+        rgba(0,0,0,0.035) 1px,
+        transparent 1px
+    );
+
+    background-size: 9px 9px;
+
+    pointer-events:none;
+
+    z-index:20;
+
+}
+
+
+
+/* ---------------------
+   HERO
+---------------------- */
+
+
+.hero {
+
+    height:100vh;
+
+    min-height:680px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.55)
+    ),
+
+    url("assets/photos/main.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    padding:25px;
+
+    animation: appear 1.2s ease;
+
+}
+
+
+
+.small-title {
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    opacity:.85;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+.hero h1 {
+
+    margin:0;
+
+    font-size:68px;
+
+    line-height:.95;
+
+    font-weight:600;
+
+    letter-spacing:-3px;
+
+}
+
+
+
+.hero h1 span {
+
+    font-size:40px;
+
+    font-weight:300;
+
+}
+
+
+
+.hero h2 {
+
+    margin-top:35px;
+
+    font-size:30px;
+
+    line-height:1.2;
+
+    font-weight:400;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+
+
+/* посадочный талон */
+
+
+.stamp {
+
+    display:inline-flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    width:130px;
+
+    height:90px;
+
+
+    margin-top:30px;
+
+
+    border:1px solid rgba(255,255,255,.7);
+
+    border-radius:12px;
+
+
+    font-size:18px;
+
+    line-height:1.2;
+
+    letter-spacing:2px;
+
+}
+
+
+
+
+
+.scroll-button {
+
+
+    display:inline-block;
+
+    margin-top:45px;
+
+
+    padding:14px 30px;
+
+
+    border-radius:50px;
+
+
+    background:white;
+
+
+    color:var(--green);
+
+
+    text-decoration:none;
+
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* самолет */
+
+
+.plane {
+
+    position:fixed;
+
+    top:25%;
+
+    left:-60px;
+
+    font-size:28px;
+
+    z-index:30;
+
+    animation:fly 18s linear infinite;
+
+}
+
+
+
+@keyframes fly {
+
+    from {
+
+        transform:translateX(-100px);
+
+    }
+
+    to {
+
+        transform:translateX(120vw);
+
+    }
+
+}
+
+
+
+
+
+
+
+/* ---------------------
+   SECTIONS
+---------------------- */
+
+
+.section {
+
+    padding:80px 22px;
+
+}
+
+
+
+.container {
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+
+.section-label {
+
+
+    color:var(--accent);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+
+
+h2 {
+
+    margin:15px 0 30px;
+
+
+    font-size:38px;
+
+    line-height:1.15;
+
+
+    font-weight:600;
+
+
+    letter-spacing:-1.5px;
+
+
+    color:var(--green);
+
+}
+
+
+
+p {
+
+    font-size:16px;
+
+    color:#3f403b;
+
+}
+
+
+
+
+
+
+
+/* ---------------------
+   CARDS
+---------------------- */
+
+
+.info-card {
+
+
+    display:flex;
+
+    gap:20px;
+
+
+    padding:25px;
+
+
+    margin:18px 0;
+
+
+    background:rgba(255,255,255,.55);
+
+
+    border-radius:22px;
+
+
+    border:1px solid rgba(0,0,0,.04);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.info-card:hover {
+
+    transform:translateY(-4px);
+
+}
+
+
+
+.icon {
+
+    font-size:30px;
+
+}
+
+
+
+.info-card h3 {
+
+
+    margin:0 0 5px;
+
+
+    color:var(--green);
+
+
+    font-size:18px;
+
+    font-weight:600;
+
+
+}
+
+
+
+.info-card p {
+
+    margin:0;
+
+}
+
+
+
+
+
+
+/* ---------------------
+   DRESS CODE
+---------------------- */
+
+
+.tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+.tags span {
+
+
+    background:white;
+
+
+    padding:9px 18px;
+
+
+    border-radius:30px;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+/* ---------------------
+   LIST
+---------------------- */
+
+
+.packing-list {
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+.packing-list li {
+
+
+    background:white;
+
+
+    padding:18px;
+
+
+    margin-bottom:12px;
+
+
+    border-radius:18px;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+/* ---------------------
+   TELEGRAM
+---------------------- */
+
+
+.telegram {
+
+
+    padding:60px 22px;
+
+
+}
+
+
+
+.telegram-card {
+
+
+    background:var(--green);
+
+
+    color:white;
+
+
+    border-radius:30px;
+
+
+    padding:45px 25px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.telegram-card h2 {
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.telegram-card p {
+
+    color:white;
+
+    opacity:.9;
+
+}
+
+
+
+.telegram-icon {
+
+    font-size:38px;
+
+}
+
+
+
+.telegram-button {
+
+
+    display:inline-block;
+
+
+    margin-top:25px;
+
+
+    background:white;
+
+
+    color:var(--green);
+
+
+    padding:14px 32px;
+
+
+    border-radius:40px;
+
+
+    text-decoration:none;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+footer {
+
+
+    padding:50px 20px;
+
+
+    text-align:center;
+
+
+    color:var(--green);
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+/* появление */
+
+
+@keyframes appear {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+
+.hero h1 {
+
+    font-size:56px;
+
+}
+
+
+
+.hero h2 {
+
+    font-size:27px;
+
+}
+
+
+
+h2 {
+
+    font-size:34px;
+
+}
+
+
+
+.section {
+
+    padding:65px 20px;
+
+}
+
+
+}
