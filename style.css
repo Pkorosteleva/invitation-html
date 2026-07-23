@@ -8,7 +8,11 @@
     --white: #ffffff;
 }
 
-
+h1, h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    text-transform: uppercase; /* Этот шрифт прекрасен в верхнем регистре */
+    letter-spacing: 4px; /* Добавьте больше воздуха между буквами */
+}
 * {
     box-sizing: border-box;
 }
@@ -164,6 +168,8 @@ body::before {
 
 
 .hero h2 {
+    margin-top: 35px;
+    letter-spacing: -1px;
     color: white;
     display: inline-block; /* Чтобы фон был только по ширине текста */
     padding: 10px 25px;
