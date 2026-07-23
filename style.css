@@ -179,7 +179,68 @@ body::before {
     font-weight: 500;
     text-shadow: 0 0 15px rgba(196, 119, 69, 0.3); /* Мягкое свечение в цвет акцента */
 }
+.rsvp-form {
+    background: var(--surface);
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,0.05);
+    margin-top: 30px;
+}
 
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    background: white;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+    border-color: var(--accent);
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
 
 
 /* посадочный талон */
