@@ -899,5 +899,5 @@ h2 {
 /* Общие настройки шрифтов */
 h1, h2, .hero h1, .hero h2 {
     font-family: 'Tenor Sans', sans-serif !important;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
