@@ -169,12 +169,17 @@ body::before {
 
 .hero h2 {
     margin-top: 35px;
-    letter-spacing: -1px;
+    letter-spacing: -1px; /* Если используете Tenor Sans, лучше поставить 2px или 4px */
     color: white;
-    display: inline-block; /* Чтобы фон был только по ширине текста */
+    
+    /* ИЗМЕНЕНО ЗДЕСЬ: */
+    display: table; 
+    margin-left: auto; /* Центрирование для display: table */
+    margin-right: auto; /* Центрирование для display: table */
+    
     padding: 10px 25px;
-    background: rgba(255, 255, 255, 0.1); /* Почти прозрачный белый */
-    backdrop-filter: blur(8px); /* Размытие фона за текстом */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -894,6 +899,5 @@ h2 {
 /* Общие настройки шрифтов */
 h1, h2, .hero h1, .hero h2 {
     font-family: 'Tenor Sans', sans-serif !important;
-    text-transform: uppercase;
     letter-spacing: 4px;
 }
