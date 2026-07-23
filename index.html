@@ -27,7 +27,7 @@
 
 
 <div class="plane">
-<img src = '/assets/icons/plane.png'></img>
+<img src = '/assets/icons/plane.png' alt = "самолетик">
 </div>
 
 
@@ -518,7 +518,58 @@
 </section>
 
 
+<section class="section rsvp">
+    <div class="container">
+        <div class="section-label">подтверждение</div>
+        <h2>Ждем вашего ответа</h2>
+        <p>Пожалуйста, сообщите нам о вашем присутствии до 1 августа.</p>
+        
+        <!-- Замените 'YOUR_FORMSPREE_ID' на ID, который вы получите после регистрации -->
+        <form action="https://formspree.io/f/mlgqprjd" method="POST" class="rsvp-form">
+            <div class="input-group">
+                <label>Как вас зовут?</label>
+                <input type="text" name="name" placeholder="Имя Фамилия" required>
+            </div>
 
+            <div class="input-group">
+                <label>Вы сможете приехать?</label>
+                <select name="attendance" required>
+                    <option value="" disabled selected>Выберите вариант</option>
+                    <option value="yes">Да, с удовольствием!</option>
+                    <option value="no">К сожалению, не смогу</option>
+                    <option value="maybe">Пока не знаю</option>
+                </select>
+            </div>
+
+
+            <div class="input-group">
+                <label>Останетесь ли вы на ночь?</label>
+                <select name="attendance" required>
+                    <option value="" disabled selected>Выберите вариант</option>
+                    <option value="yes">Да, с удовольствием!</option>
+                    <option value="no">К сожалению, не смогу</option>
+                    <option value="maybe">Пока не знаю</option>
+                </select>
+            </div>
+
+                        <div class="input-group">
+                <label>Нужен ли вам трансфер 29 августа от ВДНХ до площадки?</label>
+                <select name="attendance" required>
+                    <option value="" disabled selected>Выберите вариант</option>
+                    <option value="yes">Да</option>
+                    <option value="no">Нет, доберусь своим ходом</option>
+                </select>
+            </div>
+
+                        <div class="input-group">
+                <label>Здесь можно оставить краткое пожелание</label>
+                <input type="text" name="wish" placeholder="Пожелание">
+            </div>
+
+            <button type="submit" class="submit-button">Отправить ответ</button>
+        </form>
+    </div>
+</section>
 
 
 

@@ -175,9 +175,10 @@ body::before {
 
     letter-spacing:-1px;
 
+    color: var(--accent);
+    font-weight: 500;
+    text-shadow: 0 0 15px rgba(196, 119, 69, 0.3); /* Мягкое свечение в цвет акцента */
 }
-
-
 
 
 
