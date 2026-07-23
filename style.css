@@ -890,3 +890,10 @@ h2 {
 .submit-button:hover {
     opacity: 0.9;
 }
+
+/* Общие настройки шрифтов */
+h1, h2, .hero h1, .hero h2 {
+    font-family: 'Tenor Sans', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
