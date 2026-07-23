@@ -128,9 +128,7 @@ body::before {
 
     font-size:11px;
 
-    letter-spacing:3px;
-
-    text-transform:uppercase;
+    letter-spacing:2px;
 
     opacity:.85;
 
@@ -332,7 +330,7 @@ body::before {
 
     text-transform:uppercase;
 
-    letter-spacing:3px;
+    letter-spacing:1px;
 
     font-size:11px;
 
