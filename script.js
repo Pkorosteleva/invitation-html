@@ -20,7 +20,7 @@ function updateCountdown() {
     // Если дата наступила
     if (distance < 0) {
         clearInterval(interval);
-        document.querySelector(".countdown-container").innerHTML = "<h3>Мы married! ✨</h3>";
+        document.querySelector(".countdown-container").innerHTML = "<h3>Праздник начался!✨</h3>";
     }
 }
 
