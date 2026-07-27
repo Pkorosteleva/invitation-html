@@ -899,3 +899,22 @@ h1, h2, .hero h1, .hero h2 {
     font-family: 'Tenor Sans', sans-serif !important;
     letter-spacing: 2px;
 }
+
+.guest-greeting {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    animation: appear 1.2s ease;
+}
+
+#guest-name {
+    font-family: 'Tenor Sans', sans-serif; /* Используем ваш красивый шрифт */
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--accent); /* Выделяем имена медным цветом */
+    text-transform: none; /* Чтобы имена не были капсом */
+}

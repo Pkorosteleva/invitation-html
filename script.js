@@ -1,3 +1,29 @@
+function setGuestName() {
+    // 1. Получаем параметры из URL (все, что после знака ?)
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // 2. Ищем параметр с названием 'name'
+    const guestName = urlParams.get('name');
+    
+    // 3. Если имя в ссылке есть, заменяем текст в блоке #guest-name
+    if (guestName) {
+        // decodeURIComponent нужен, чтобы пробелы и кириллица из ссылки читались правильно
+        document.getElementById('guest-name').innerText = decodeURIComponent(guestName);
+    } else {
+        // Если ссылки без имени (просто зашли на сайт), можно либо:
+        // а) Оставить "друзья" (как в HTML)
+        // б) Скрыть весь блок приветствия:
+        // document.getElementById('guest-greeting').style.display = 'none';
+    }
+}
+
+// Запускаем функцию при загрузке страницы
+window.onload = () => {
+    setGuestName();
+    // тут ваши остальные функции, например updateCountdown();
+};
+
+
 function updateCountdown() {
     // Укажите дату вашего события: Год, Месяц (0-11), День, Часы, Минуты
     // ВНИМАНИЕ: Месяцы в JS начинаются с 0. Август — это 7.
