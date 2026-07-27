@@ -918,3 +918,43 @@ h1, h2, .hero h1, .hero h2 {
     color: var(--accent); /* Выделяем имена медным цветом */
     text-transform: none; /* Чтобы имена не были капсом */
 }
+
+.plane {
+    position: fixed;
+    top: 25%;
+    left: -100px;
+    z-index: 30;
+    animation: fly 18s linear infinite;
+    
+    /* ЦВЕТ: теперь работает! */
+    color: var(--accent); /* Самолетик станет медным */
+    
+    /* РАЗМЕР: */
+    width: 50px; 
+}
+
+.plane svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-frame {
+    width: 100%;          /* Растягиваем на всю ширину карточки */
+    height: 300px;        /* Задаем комфортную высоту (можно менять) */
+    border-radius: 12px;  /* Скругление углов под стиль сайта */
+    margin-top: 15px;     /* Отступ от текста выше */
+    display: block;       /* Убираем лишние зазоры снизу */
+}
+
+/* Чтобы карта не «прилипала» к краям, если у вас в .info-card 
+   уже есть padding, она и так будет иметь отступы. 
+   Но если вы хотите, чтобы она была во всю ширину БЕЗ отступов, 
+   используйте отрицательные margin: */
+/* 
+.map-frame {
+    margin-left: -25px; 
+    margin-right: -25px;
+    width: calc(100% + 50px); 
+} 
+*/
