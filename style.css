@@ -260,23 +260,6 @@ body::before {
 /* самолет */
 
 
-.plane {
-
-    position:fixed;
-
-    top:25%;
-
-    left:-60px;
-
-    font-size:28px;
-
-    z-index:30;
-
-    animation:fly 18s linear infinite;
-
-}
-
-
 
 @keyframes fly {
 
