@@ -908,19 +908,19 @@ h1, h2, .hero h1, .hero h2 {
     left: -100px;
     z-index: 30;
     animation: fly 18s linear infinite;
+
     
     /* ЦВЕТ: теперь работает! */
     color: var(--accent); /* Самолетик станет медным */
     
     /* РАЗМЕР: */
-    width: 50px; 
-}
-
-.plane svg {
     width: 200%;
     height: auto;
     display: block;
+    opacity: 0.2; 
 }
+
+
 
 .map-frame {
     width: 100%;          /* Растягиваем на всю ширину карточки */
