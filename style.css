@@ -902,7 +902,7 @@ h1, h2, .hero h1, .hero h2 {
     text-transform: none; /* Чтобы имена не были капсом */
 }
 
-.plane {
+.plane svg {
     position: fixed;
     top: 25%;
     left: -100px;
