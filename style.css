@@ -897,8 +897,8 @@ h1, h2, .hero h1, .hero h2 {
 #guest-name {
     font-family: 'Tenor Sans', sans-serif; /* Используем ваш красивый шрифт */
     font-weight: 600;
-    font-size: 22px;
-    color: var(--green); /* Выделяем имена медным цветом */
+    font-size: 26px;
+    color: var(--white); /* Выделяем имена медным цветом */
     text-transform: none; /* Чтобы имена не были капсом */
 }
 
@@ -917,7 +917,7 @@ h1, h2, .hero h1, .hero h2 {
 }
 
 .plane svg {
-    width: 100%;
+    width: 200%;
     height: auto;
     display: block;
 }
