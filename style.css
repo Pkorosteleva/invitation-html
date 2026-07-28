@@ -924,8 +924,7 @@ h1, h2, .hero h1, .hero h2 {
 
 .map-frame {
     width: 100%;          /* Растягиваем на всю ширину карточки */
-    height: 300px;  
-    width: 400px;      
+    height: 300px;      
     border-radius: 12px;  /* Скругление углов под стиль сайта */
     margin-top: 15px;     /* Отступ от текста выше */
     display: block;       /* Убираем лишние зазоры снизу */
