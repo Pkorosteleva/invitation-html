@@ -914,7 +914,7 @@ h1, h2, .hero h1, .hero h2 {
     color: var(--accent); /* Самолетик станет медным */
     
     /* РАЗМЕР: */
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
     opacity: 0.2; 
