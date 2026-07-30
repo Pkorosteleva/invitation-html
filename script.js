@@ -18,10 +18,9 @@ function setGuestName() {
 }
 
 // Запускаем функцию при загрузке страницы
-window.onload = () => {
-    setGuestName();
-    // тут ваши остальные функции, например updateCountdown();
-};
+
+setGuestName();
+
 
 
 function updateCountdown() {
