@@ -97,7 +97,7 @@ body::before {
         rgba(0,0,0,.55)
     ),
 
-    url("assets/photos/main.png");
+    url("assets/photos/main.webp");
 
 
     background-size:cover;
