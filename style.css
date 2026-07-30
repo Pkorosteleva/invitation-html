@@ -911,7 +911,7 @@ h1, h2, .hero h1, .hero h2 {
     animation: fly 18s linear infinite;
     
     /* Задаем размер самого самолетика здесь */
-    width: 80px; 
+    width: 160px; 
     height: auto;
     pointer-events: none;
 }
