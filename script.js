@@ -1,3 +1,10 @@
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    // Добавляем класс, который скрывает прелоадер
+    preloader.classList.add('preloader-hidden');
+});
+
 function setGuestName() {
     // 1. Получаем параметры из URL (все, что после знака ?)
     const urlParams = new URLSearchParams(window.location.search);
@@ -55,3 +62,4 @@ const interval = setInterval(updateCountdown, 1000);
 
 // Первый запуск сразу при загрузке страницы
 updateCountdown();
+
